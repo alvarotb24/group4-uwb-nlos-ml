@@ -1,0 +1,142 @@
+{
+  "session": 1,
+  "started": "2026-10-08T10:21:12+00:00",
+  "finished": "2026-10-08T10:21:26+00:00",
+  "part": "4/12",
+  "order": [
+    [
+      "L",
+      "rf",
+      1
+    ]
+  ],
+  "full_order": [
+    [
+      "C",
+      "rf",
+      4
+    ],
+    [
+      "H",
+      "lr",
+      4
+    ],
+    [
+      "H",
+      "lr",
+      1
+    ],
+    [
+      "L",
+      "rf",
+      1
+    ],
+    [
+      "C",
+      "rf",
+      1
+    ],
+    [
+      "C",
+      "lr",
+      4
+    ],
+    [
+      "H",
+      "rf",
+      4
+    ],
+    [
+      "H",
+      "rf",
+      1
+    ],
+    [
+      "C",
+      "lr",
+      1
+    ],
+    [
+      "L",
+      "lr",
+      4
+    ],
+    [
+      "L",
+      "rf",
+      4
+    ],
+    [
+      "L",
+      "lr",
+      1
+    ]
+  ],
+  "n": 1000,
+  "warmup": 50,
+  "errors": 0,
+  "client": {
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "processor": "x86_64",
+    "python": "3.12.14",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.3",
+    "requests": "2.34.2",
+    "cpu_count": 2
+  },
+  "urls": {
+    "H": "http://127.0.0.1:8000",
+    "C": "http://<cloud-VM-IP>:8000"
+  },
+  "servers": {
+    "H": {
+      "status": "ok",
+      "models": {
+        "lr": "b18860bc89932526e9073ea1ed03ae2a578ba17d053388cd64e8f7cd6b18df55",
+        "rf": "35d815d97d9504eddddb37b94bc5ef98b0f3de623b82d5cc1a1d2b6c4bf36069"
+      },
+      "features": [
+        "FP_POW",
+        "RX_POW",
+        "FP_SNR",
+        "NOISE_STD",
+        "RXPACC",
+        "MEAN_DELAY",
+        "RMS_DS",
+        "PEAK_DELAY",
+        "FP_PEAK_RATIO",
+        "KURTOSIS"
+      ],
+      "python": "3.12.14",
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.3",
+      "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+      "cpu_count": 2
+    },
+    "C": {
+      "status": "ok",
+      "models": {
+        "lr": "b18860bc89932526e9073ea1ed03ae2a578ba17d053388cd64e8f7cd6b18df55",
+        "rf": "35d815d97d9504eddddb37b94bc5ef98b0f3de623b82d5cc1a1d2b6c4bf36069"
+      },
+      "features": [
+        "FP_POW",
+        "RX_POW",
+        "FP_SNR",
+        "NOISE_STD",
+        "RXPACC",
+        "MEAN_DELAY",
+        "RMS_DS",
+        "PEAK_DELAY",
+        "FP_PEAK_RATIO",
+        "KURTOSIS"
+      ],
+      "python": "3.12.3",
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.3",
+      "platform": "Linux-6.17.0-1020-oracle-x86_64-with-glibc2.39",
+      "cpu_count": 2
+    }
+  },
+  "tcp_connect_ms": {}
+}

@@ -1,0 +1,33 @@
+# Output of opp_q2.py (out-of-fold scores pooled over the 5 folds)
+== all: n=41977
+Default threshold 0.5:  missed NLOS / false alarm
+  M0: missed 41.2 %  false alarm 24.3 %  acc 67.3 %
+  M2: missed 17.6 %  false alarm 10.4 %  acc 86.0 %
+  M4: missed 15.0 %  false alarm 8.9 %  acc 88.1 %
+  vendor rule literal, NLOS if PWR_DIFF >= 6 dB: missed 36.6 %  false alarm 29.0 %
+  vendor rule literal, NLOS if PWR_DIFF >= 10 dB: missed 61.3 %  false alarm 9.4 %
+Missed NLOS at an equal false-alarm rate (threshold set on out-of-fold scores):
+  FA ~5 %: M0 71.0 % (FA 5.0) | M2 26.2 % (FA 5.0) | M4 20.1 % (FA 5.0)
+  FA ~10 %: M0 60.1 % (FA 10.0) | M2 17.9 % (FA 10.0) | M4 14.0 % (FA 9.9)
+  FA ~20 %: M0 45.5 % (FA 20.0) | M2 11.7 % (FA 20.0) | M4 8.6 % (FA 19.7)
+  FA ~29 %: M0 36.6 % (FA 29.0) | M2 8.9 % (FA 29.0) | M4 5.9 % (FA 28.7)
+Missed NLOS at the vendor rule's own false-alarm rates:
+  rule 6 dB: rule missed 36.6 % at FA 29.0 % | M2 8.9 % (FA 29.0) | M4 5.9 % (FA 28.7)
+  rule 10 dB: rule missed 61.3 % at FA 9.4 % | M2 18.6 % (FA 9.4) | M4 14.4 % (FA 9.3)
+
+# python opp_q2.py matched   (S2, distance-matched subset)
+== matched: n=25864
+Default threshold 0.5:  missed NLOS / false alarm
+  M0: missed 46.7 %  false alarm 29.4 %  acc 61.9 %
+  M2: missed 23.7 %  false alarm 15.0 %  acc 80.7 %
+  M4: missed 20.3 %  false alarm 12.9 %  acc 83.4 %
+  vendor rule literal, NLOS if PWR_DIFF >= 6 dB: missed 42.9 %  false alarm 33.3 %
+  vendor rule literal, NLOS if PWR_DIFF >= 10 dB: missed 68.6 %  false alarm 11.4 %
+Missed NLOS at an equal false-alarm rate (threshold set on out-of-fold scores):
+  FA ~5 %: M0 80.2 % (FA 5.0) | M2 40.3 % (FA 5.0) | M4 31.8 % (FA 4.9)
+  FA ~10 %: M0 71.2 % (FA 10.0) | M2 30.0 % (FA 10.0) | M4 23.2 % (FA 10.0)
+  FA ~20 %: M0 56.5 % (FA 20.0) | M2 19.6 % (FA 20.0) | M4 15.2 % (FA 19.8)
+  FA ~29 %: M0 47.1 % (FA 29.0) | M2 15.1 % (FA 29.0) | M4 10.7 % (FA 28.9)
+Missed NLOS at the vendor rule's own false-alarm rates:
+  rule 6 dB: rule missed 42.9 % at FA 33.3 % | M2 13.9 % (FA 33.3) | M4 9.1 % (FA 33.3)
+  rule 10 dB: rule missed 68.6 % at FA 11.4 % | M2 27.8 % (FA 11.4) | M4 21.7 % (FA 11.3)

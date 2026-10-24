@@ -1,0 +1,53 @@
+{
+  "created_utc": "2026-10-08T08:51:13+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "pandas": "3.0.6"
+  },
+  "seed": 42,
+  "features": [
+    "FP_POW",
+    "RX_POW",
+    "FP_SNR",
+    "NOISE_STD",
+    "RXPACC",
+    "MEAN_DELAY",
+    "RMS_DS",
+    "PEAK_DELAY",
+    "FP_PEAK_RATIO",
+    "KURTOSIS"
+  ],
+  "cleaning": {
+    "n_raw": 42000,
+    "removed_zero_range": 1,
+    "removed_zero_cir_power": 3,
+    "removed_fp_idx_gt_800": 19,
+    "removed_total": 23,
+    "n_clean": 41977,
+    "n_los": 20998,
+    "n_nlos": 20979
+  },
+  "models": {
+    "lr": {
+      "file": "m2_logreg.joblib",
+      "sha256": "b18860bc89932526e9073ea1ed03ae2a578ba17d053388cd64e8f7cd6b18df55",
+      "bytes": 1140
+    },
+    "rf": {
+      "file": "m4_rf.joblib",
+      "sha256": "35d815d97d9504eddddb37b94bc5ef98b0f3de623b82d5cc1a1d2b6c4bf36069",
+      "bytes": 33318512
+    }
+  },
+  "model_params": {
+    "lr": "StandardScaler + LogisticRegression(max_iter=2000), other settings default",
+    "rf": "RandomForestClassifier(n_estimators=300, random_state=seed, n_jobs=1), other settings default"
+  },
+  "payload_pool_size": 4000,
+  "cv_check": null
+}

@@ -1,0 +1,6 @@
+model,accuracy_%,accuracy_sd,auc,auc_sd,missed_nlos_%,false_alarm_%
+M0 vendor rule (PWR_DIFF),67.2702,0.8535,0.7268,0.0097,41.2031,24.2642
+M1 CIR shape (10 PCs),70.7221,0.4845,0.7813,0.0056,36.1695,22.3926
+"M2 logistic, 10 features",86.0042,0.3347,0.9228,0.0026,17.6414,10.3534
+M3 M2 + RANGE,86.2949,0.2566,0.9231,0.0032,17.6748,9.739
+"M4 random forest, 300 trees",88.0792,0.2356,0.9484,0.0015,14.9769,8.8675

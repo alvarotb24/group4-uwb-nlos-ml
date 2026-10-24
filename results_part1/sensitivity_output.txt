@@ -1,0 +1,37 @@
+# Output of sens_run.py (stratified 5-fold CV, seed 42; mean ± SD over folds, SD with ddof=1)
+# python sens_run.py all M0,M2,M4
+all: n=41977 LOS=20998 NLOS=20979
+  single-feature AUC RANGE: 0.757
+  single-feature AUC RX_POW: 0.919
+  single-feature AUC FP_POW: 0.901
+  single-feature AUC RXPACC: 0.905
+  single-feature AUC PWR_DIFF: 0.727
+  single-feature AUC MEAN_DELAY: 0.774
+  M0: acc 67.3 ± 0.9 %  AUC 0.727 ± 0.010  missed NLOS 41.2 %
+  M2: acc 86.0 ± 0.3 %  AUC 0.923 ± 0.003  missed NLOS 17.6 %
+  M4: acc 88.1 ± 0.2 %  AUC 0.948 ± 0.001  missed NLOS 15.0 %
+
+# python sens_run.py no1536 M0,M2,M4   (S1)
+no1536: n=40420 LOS=20972 NLOS=19448
+  single-feature AUC RANGE: 0.739
+  single-feature AUC RX_POW: 0.914
+  single-feature AUC FP_POW: 0.894
+  single-feature AUC RXPACC: 0.898
+  single-feature AUC PWR_DIFF: 0.713
+  single-feature AUC MEAN_DELAY: 0.758
+  M0: acc 66.6 ± 0.7 %  AUC 0.713 ± 0.007  missed NLOS 45.3 %
+  M2: acc 85.6 ± 0.5 %  AUC 0.918 ± 0.004  missed NLOS 19.0 %
+  M4: acc 87.6 ± 0.5 %  AUC 0.944 ± 0.003  missed NLOS 16.2 %
+
+# python sens_run.py matched M0,M2,M4   (S2)
+matched: n=25864 LOS=12932 NLOS=12932
+  RANGE median LOS 3.45 NLOS 3.46
+  single-feature AUC RANGE: 0.501
+  single-feature AUC RX_POW: 0.862
+  single-feature AUC FP_POW: 0.833
+  single-feature AUC RXPACC: 0.838
+  single-feature AUC PWR_DIFF: 0.661
+  single-feature AUC MEAN_DELAY: 0.674
+  M0: acc 61.9 ± 0.7 %  AUC 0.661 ± 0.007  missed NLOS 46.7 %
+  M2: acc 80.7 ± 0.7 %  AUC 0.871 ± 0.006  missed NLOS 23.7 %
+  M4: acc 83.4 ± 0.5 %  AUC 0.913 ± 0.004  missed NLOS 20.3 %

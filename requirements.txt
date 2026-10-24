@@ -1,0 +1,11 @@
+# Laptop (client) environment. Exact versions are recorded in models/metadata.json and
+# models/requirements-lock.txt when you run train_export.py.
+numpy
+scipy
+pandas
+scikit-learn
+joblib
+fastapi
+uvicorn
+requests
+matplotlib

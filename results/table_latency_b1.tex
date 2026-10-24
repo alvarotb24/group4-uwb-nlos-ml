@@ -1,0 +1,13 @@
+\begin{tabular}{llccccc}
+\toprule
+Model & Condition & Median & IQR & 95th pct. & 99th pct. & Server compute \\
+\midrule
+M2 (LR) & L: in-process & 0.185 & 0.086 & 0.436 & 0.953 & n/a \\
+ & H: REST, localhost & 2.32 & 1.88 & 5.92 & 9.43 & 0.477 \\
+ & C: REST, cloud VM & 6.53 & 3.14 & 11.9 & 16.1 & 0.560 \\
+\addlinespace
+M4 (RF) & L: in-process & 13.1 & 10.2 & 27.9 & 31.4 & n/a \\
+ & H: REST, localhost & 17.9 & 16.8 & 45.5 & 54.7 & 15.6 \\
+ & C: REST, cloud VM & 86.6 & 21.7 & 107.7 & 162.8 & 74.0 \\
+\bottomrule
+\end{tabular}
